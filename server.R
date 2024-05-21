@@ -80,7 +80,8 @@ shinyServer(function(input, output, session) {
       filter(anio >= input$anioSelect[1] & anio <= input$anioSelect[2],
              country_name %in% input$paisSelect) %>% 
       pivot_wider(names_from = indicator_name,
-                  values_from = valor)
+                  values_from = valor) %>% 
+      mutate(Cobertura = Cobertura/100)
   })
   
   # Render gráfico
