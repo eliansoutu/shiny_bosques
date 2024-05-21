@@ -5,9 +5,6 @@ shinyUI(
               
               nav_panel("Info", icon = bs_icon("info-circle"),
                         
-                        h5("Este tablero fue realizado en el marco del curso de ", tags$b("Introducción a Shiny"), "de", 
-                           tags$a("estación-r", href = "https://estacion-r.netlify.app/", target = "_blank")),
-                        
                         h5("La información presentada refiere a la superficie de bosques en países de todo el mundo y su evolución en el tiempo, en base a datos abiertos del", 
                            tags$a("Banco Mundial", href = "https://data.worldbank.org/", target = "_blank")),
                         
